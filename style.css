@@ -128,7 +128,7 @@ body {
 
   background: #ADA996;
   background: linear-gradient(to bottom, #EAEAEA, #ffffff, #F2F2F2, #ADA996);
-  box-shadow: inset 10px 10px 10px rgba(0, 0, 0, 0.9);
+  box-shadow: inset 10px 10px 10px rgb(0 0 0 / 80%);
 }
 
 .sound_btn {
