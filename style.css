@@ -146,3 +146,26 @@ body {
   color: white;
   border: 1px solid black;
 }
+
+@media only screen and (max-width: 768px) {
+
+  .clock__container {
+    scale: 0.7;
+  }
+  .sound_btn {
+    right: 50%;
+    transform: translateX(50%);
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .clock__container {
+    scale: 0.4;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  .clock__container {
+    scale: 0.25;
+  }
+}
