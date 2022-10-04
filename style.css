@@ -1,0 +1,123 @@
+html, body {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background: #1F1C2C;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #928DAB, #1F1C2C);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to bottom, #928DAB, #1F1C2C); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.clock__container {
+  display: flex;
+  position: relative;
+  width: fit-content;
+}
+
+.clock__mech {
+  --size: 30px;
+  width: var(--size);
+  height: var(--size);
+  /* background: rgb(192, 192, 192); */
+
+  background: #ADA996;
+  background: linear-gradient(to bottom, #EAEAEA, #DBDBDB, #F2F2F2, #ADA996);
+  border: 1px solid black;
+  border-radius: 100%;
+  box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.5);
+  
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  z-index: 4;
+}
+
+.clock__minutes {
+  position: absolute;
+  width: 7px;
+  height: 250px;
+  border: 1px solid black;
+  border-radius: 2px;
+  bottom: 50%;
+  left: 50%;
+  z-index: 1;
+  transform-origin: bottom left;
+  transform: translateX(-50%);
+
+  background: white;
+  background: #ADA996;
+  background: linear-gradient(to bottom, #EAEAEA, #DBDBDB, #F2F2F2, #ADA996);
+}
+
+.clock__hours {
+  position: absolute;
+  width: 10px;
+  height: 150px;
+  border: 1px solid black;
+  border-radius: 2px;
+  bottom: 50%;
+  left: 50%;
+  transform-origin: bottom left;
+  transform: translateX(-50%);
+  z-index: 2;
+
+  background: white;
+  background: #ADA996;
+  background: linear-gradient(to bottom, #EAEAEA, #DBDBDB, #F2F2F2, #ADA996);
+}
+
+.clock__seconds {
+  --width: 2px;
+  --height: 300px;
+  position: absolute;
+  width: var(--width);
+  height: var(--height);
+  background: #712fdc;
+  bottom: 50%;
+  left: 50%;
+  transform-origin: bottom left;
+  transform: translateX(-50%);
+  z-index: 3;
+}
+
+.clock__face {
+  --zdepth: 30px;
+  z-index: 0;
+  border-radius: 50%;
+  background: #ffffff6e;
+
+  background: #ADA996;
+  background: linear-gradient(to bottom, #EAEAEA, #ffffff, #F2F2F2, #ADA996);
+  box-shadow: var(--zdepth) var(--zdepth) var(--zdepth) rgba(0, 0, 0, 0.5);
+}
+
+.sound_btn {
+  position: fixed;
+  right: 3rem;
+  top: 3rem;
+  padding: 1rem 1.5rem;
+  border: 1px solid white;
+  cursor: pointer;
+  color: white;
+  background: rgba(255, 255, 255, 0);
+  border-radius: 1rem;
+}
+
+.sound_disabled {
+  cursor: pointer;
+  background: black;
+  color: white;
+  border: 1px solid black;
+}
