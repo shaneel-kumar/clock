@@ -28,11 +28,9 @@ body {
   --size: 30px;
   width: var(--size);
   height: var(--size);
-  /* background: rgb(192, 192, 192); */
 
   background: #ADA996;
   background: linear-gradient(to bottom, #EAEAEA, #DBDBDB, #F2F2F2, #ADA996);
-  border: 1px solid black;
   border-radius: 100%;
   box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.5);
   
@@ -92,22 +90,33 @@ body {
   z-index: 3;
 }
 
-.clock_body {
+.clock__body {
+  --zdepth: 30px;
   position: absolute;
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
+
+  border-radius: 50%;
+  border: 1px solid black;
+  box-shadow: var(--zdepth) var(--zdepth) var(--zdepth) rgba(0, 0, 0, 0.5);
+
+  background: #434343;
+  background: -webkit-linear-gradient(to right, #434343, #000000);
+  background: linear-gradient(to right, #434343, #000000);
+
 }
 
-.clock_rim {
+.clock__rim {
   position: absolute;
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
+  border-radius: 50%;
+  border: 2px solid black;
 }
 
 .clock__face {
-  --zdepth: 30px;
   position: absolute;
   left: 50%;
   top: 50%;
@@ -117,9 +126,9 @@ body {
   border-radius: 50%;
   background: white;
 
-  /* background: #ADA996;
+  background: #ADA996;
   background: linear-gradient(to bottom, #EAEAEA, #ffffff, #F2F2F2, #ADA996);
-  box-shadow: var(--zdepth) var(--zdepth) var(--zdepth) rgba(0, 0, 0, 0.5); */
+  box-shadow: inset 10px 10px 10px rgba(0, 0, 0, 0.9);
 }
 
 .sound_btn {
