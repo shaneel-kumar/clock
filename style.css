@@ -98,7 +98,6 @@ body {
   transform: translate(-50%, -50%);
 
   border-radius: 50%;
-  border: 1px solid black;
   box-shadow: var(--zdepth) var(--zdepth) var(--zdepth) rgba(0, 0, 0, 0.5);
 
   background: #434343;
